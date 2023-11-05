@@ -10,7 +10,22 @@
 
 <body>
     <div class="container">
-        <h1 class="text-primary">Bosh sarlavha</h1>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <h5 class="text-body-emphasis h4">Collapsed content</h5>
+                <span class="text-body-secondary">Toggleable via the navbar brand.</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+        <h1 class="text-primary mt-5">Bosh sarlavha</h1>
         <form class="w-50 mt-5">
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -28,6 +43,7 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    <script src="./js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
